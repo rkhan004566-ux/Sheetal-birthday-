@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    .btn {
+      padding: 15px 25px;
+      font-size: 18px;
+      background: #ff758c;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .card {
+      display: none;
+      margin-top: 30px;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <button class="btn" onclick="showCard()">Tap to Open 🎁</button>
+
+    <div class="card" id="card">
+      <h1>🎉 Happy Birthday Sheetal 🎂</h1>
+
+      <p>
+        Hey Sheetal 😄<br><br>
+        Surpriseee 👀<br><br>
+        Today is your day, so just chill and enjoy ✨<br>
+        Stay awesome and keep smiling like always 😊<br><br>
+        Hope your day is full of fun, laughter,<br>
+        and yeah… save some cake for me too 🍰😏
+      </p>
+
+      <p><b>Have an amazing day 🥳</b></p>
+
+      <p>— From Dhakkan 😎</p>
+    </div>
+  </div>
+
+  <script>
+    function showCard() {
+      document.getElementById("card").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+                                  
